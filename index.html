@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Single Page Navigation with Left-side Navbar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
-<body>
-    <div class="container">
-        <div class="leftside">
-            <h1>Left side</h1>
-            <a href="#" class="active" onclick="showContent('about')">About</a>
-			<a href="#" onclick="showContent('contact')">Contact</a>
-        </div>
-        <div class="rightside">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptate nobis consectetur laboriosam veritatis obcaecati dolorem natus dolorum ab sunt beatae, sint dolore!</p>
-        </div>
-    </div>
 
-    <div id="main-content">
-		<div id="about-content">
-			<h2>About</h2>
-			<p>This is the about page content.</p>
-		</div>
-		<div id="contact-content">
-			<h2>Contact</h2>
-			<p>This is the contact page content.</p>
-		</div>
-	</div>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" >
+        <h2>Home</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec magna eget leo pulvinar pellentesque. Sed
+            vestibulum convallis velit ut blandit. Fusce sed mauris tortor. Nulla facilisi. Nam ac neque eu diam aliquet
+            dapibus ac nec arcu.</p>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec magna eget leo pulvinar pellentesque. Sed
+            vestibulum convallis velit ut blandit. Fusce sed mauris tortor. Nulla facilisi. Nam ac neque eu diam aliquet
+            dapibus ac nec arcu.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Mauris laoreet, dolor in dapibus elementum, sapien massa iaculis sem, eu facilisis ipsum magna ut justo.
+            Donec consectetur erat sit amet aliquam vestibulum. Nunc elementum euismod ante quis iaculis. Nunc posuere
+            nibh est, eu laoreet magna convallis et. Sed euismod nisl sit amet lectus viverra ultrices.</p>
+    </section>
 
 </body>
-<script src="index.js"></script>
-</html>
