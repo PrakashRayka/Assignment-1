@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.leftside{
+    background-color: brown;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 301px;
+    height: 600px;
+}
+
+.rightside{
+    background-color: blue;
+    color: white;
+    float: right;
+}
