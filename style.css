@@ -1,19 +1,44 @@
-*{
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.leftside{
-    background-color: brown;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    width: 301px;
-    height: 600px;
+nav li {
+    margin: 10px 0;
 }
 
-.rightside{
-    background-color: blue;
-    color: white;
-    float: right;
+nav a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling for sections */
+section {
+    margin-top: 60px;
+    /* To avoid overlap with navbar */
+    padding: 50px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    margin-left: 185px;
+}
+
+/* Hide all sections by default */
+section:not(:first-child) {
+    display: none;
+}
+
+#home {
+    display: block;
 }
